@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" style="margin:0;padding:0;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Factory Sound Sydney Store</title>
+  <style type="text/css">
+    /* Base Reset & Typography */
+    body, table, td, a, p, h1, h2, h3 {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      line-height: 1.6;
+    }
+    body {
+      background-color: #000000;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 600px;
+      background-color: #111111;
+      margin: 20px auto;
+      padding: 20px;
+      color: #ffffff;
+    }
+
+    /* Headings & Paragraphs */
+    h1, h2, h3, p {
+      color: #ffffff;
+      text-align: center;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 20px 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin: 20px;
+    }
+
+    /* Header Links */
+    .header-links {
+      text-align: center;
+      width: 90%;
+      margin: 0 auto 10px;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    .header-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+      /* Add transitions to color & background */
+      transition: color 0.3s ease, background-color 0.3s ease;
+      padding: 6px 8px; /* Slight padding so hover bg is visible */
+    }
+    .header-links a:hover {
+      color: #111111;            /* Switch text to dark on hover */
+      background-color: #22F08A; /* Bright green background on hover */
+    }
+
+    /* Buttons & CTA */
+    a.button {
+      display: inline-block;
+      background-color: #22F08A;
+      color: #ffffff;
+      font-weight: bold;
+      padding: 14px 28px;
+      font-size: 16px;
+      margin: 20px auto;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      /* Smooth hover transition */
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #FF256F;
+      color: #ffffff;
+      transform: scale(1.05); /* Slight enlarge on hover */
+    }
+
+    /* Footer Links */
+    .footer a {
+      color: #22F08A;
+      font-weight: bold;
+      text-decoration: none;
+      /* Smooth hover transition */
+      transition: color 0.3s ease, background-color 0.3s ease;
+      padding: 6px 8px; /* So background highlight can show if added */
+    }
+    .footer a:hover {
+      color: #111111;
+      background-color: #22F08A;
+    }
+
+    /* Social Icons */
+    .social-icons img {
+      width: 24px;
+      margin: 0 3px;
+      vertical-align: middle;
+      /* Add a slight scale hover effect on the icon itself */
+      transition: transform 0.3s ease;
+    }
+    .social-icons a:hover img {
+      transform: scale(1.2);
+    }
+
+    /* Hero Image */
+    .hero img {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      /* aspect-ratio not fully supported by all email clients */
+      aspect-ratio: 210 / 297;
+      border-radius: 0;
+    }
+
+    /* Divider */
+    .divider {
+      border: none;
+      border-top: 1px solid #333333;
+      margin: 40px 0;
+    }
+
+    /* Section Titles */
+    .section-title {
+      font-size: 26px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #22F08A;
+      text-align: center;
+      border: 2px solid #333;
+      padding: 10px;
+      display: block;
+      width: 80%;
+      margin: 40px auto 20px;
+    }
+    .sub-section-title {
+      font-size: 26px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #22F08A;
+      margin: 40px 0 10px;
+      text-align: center;
+    }
+
+    /* Highlight Section */
+    .highlight-section {
+      background-color: #222222;
+      padding: 35px;
+      text-align: center;
+      margin: 40px 20px;
+    }
+    .highlight-section p {
+      margin: 15px 20px;
+      font-size: 12px;
+
+
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    /* Optional (Products, etc.) */
+    .product-table {
+      width: 100%;
+      text-align: center;
+    }
+    .product-cell {
+      background-color: #1a1a1a;
+      padding: 20px;
+      margin: 10px 0;
+    }
+    .product-img-wrap {
+      background-color: #ffffff;
+      padding: 10px;
+      display: inline-block;
+      margin-bottom: 10px;
+      border: 1px solid #333;
+    }
+    .product-cell h3 {
+      margin: 10px 0;
+      color: #22F08A;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .product-cell p {
+      font-size: 14px;
+      color: #cccccc;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    /* CTA Container */
+    .cta-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .cta-container a.button {
+      padding: 18px 36px;
+      margin: 20px auto;
+      width: auto;
+      text-transform: uppercase;
+    }
+
+    /* Neutrik Description */
+    .neutrik-description {
+      margin: 10px 20px 30px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #ffffff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background-color:#000000;">
+
+<!-- Preheader Text (Hidden in most clients) -->
+<div style="display:none; font-size:1px; color:#000000;">
+  Factory Sound has landed in Sydney! Visit our new store for exclusive promotions, pro audio gear, and a chance to win a $1000 gift card.
+</div>
+	
+<!-- Main Wrapper Table -->
+<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="background-color:#000000; margin:0; padding:0;">
+  <tr>
+    <td align="center" valign="top" style="margin:0; padding:20px;">
+		
+			<!-- View in Browser -->
+                        <div style="font-size:10px; color:#aaaaaa; text-align:center; margin:0 0 -40px;">
+                            <a href="https://example.com/view-in-browser" target="_blank" style="color:#aaaaaa; text-decoration:underline;">View this email in your browser</a>
+                        </div>
+		
+      <!-- Main Container -->
+      <table width="600" border="0" cellspacing="0" cellpadding="0" class="container">
+        <tr>
+          <td align="center" style="padding:20px;">
+				
+            <!-- Factory Sound Logo -->
+            <div style="text-align:center; margin-bottom:10px;">
+              <img src="https://raw.githubusercontent.com/MumblesCode/Factory-Sound/main/FS%20Logo_RGB_White_HZ.PNG"
+                   alt="Factory Sound Logo"
+                   style="
+                     width:auto; 
+                     max-width:480px; 
+                     height:auto;
+                     display:block;
+                     margin:0 auto;">
+            </div>
+
+            <!-- Header Links -->
+            <div class="header-links">
+              <a href="https://factorysound.com/shop-page/" target="_blank" rel="noopener">Shop Now</a> |
+              <a href="https://factorysound.com/our-brands/" target="_blank" rel="noopener">Brands</a> |
+              <a href="https://factorysound.com/projects/" target="_blank" rel="noopener">Projects</a>
+            </div>
+
+            <!-- Hero & Intro -->
+            <div class="hero" style="text-align:center;">
+              <img src="https://raw.githubusercontent.com/MumblesCode/Factory-Sound/main/COME%20IN%20STORE%2C%20GO%20IN%20THE%20DRAW%20(Flyer%20(A4))%20(1).gif"
+                   alt="Factory Sound Sydney Storefront"
+                   style="
+                     display:block; 
+                     width:100%; 
+                     max-width:600px; 
+                     height:auto;
+                     border-radius:0;">
+            </div>
+
+            <h1>Factory Sound Has Officially Landed!</h1>
+            <p>
+              We hope you’ve been doing well. Since you’ve previously shopped with Factory Sound online (our Melbourne store), we wanted to share something exciting: Factory Sound has officially landed in Sydney!
+            </p>
+
+            <h2 class="sub-section-title">The All-New Industry Hub</h2>
+            <p>
+              Find us at <strong>2/552-560 Church Street, North Parramatta</strong>, where we’ve crafted a world-class retail and experiential center. The Sydney location features a curated selection of gear tailored to our local community.<br>+ Enjoy a complimentary barista-made coffee anytime you visit!
+            </p>
+
+            <!-- Highlight Section -->
+            <div class="highlight-section">
+              <h2 style="font-size:24px; text-transform:uppercase; font-weight:bold; color:#ffffff; margin-bottom:15px;">
+                Competition Announcement
+              </h2>
+              <p style="margin:15px 0;">
+                Visit Before feb 28th For your Chance To Win a<br>
+                <span style="font-size:20px;">factory sound $1000 Gift Card!</span>
+              </p>
+              <!-- CTA Button -->
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Factory+Sound+Parramatta"
+                 target="_blank"
+                 rel="noopener"
+                 class="button">
+                <span style="font-size:14px; display:inline-block; color:#ffffff;">Get Directions to</span><br>
+                Visit Our Sydney Store
+              </a>
+            </div>
+
+            <p>
+              We’re very grateful for your past support and look forward to seeing you in our new Sydney space. Experience innovation, inspiration, and exceptional sound solutions—right here in North Parramatta.
+            </p>
+            <p>
+              Warm Regards,<br>The Factory Sound Sydney Team
+            </p>
+
+          </td>
+        </tr>
+      </table>
+
+      <!-- Footer -->
+      <table width="600" border="0" cellspacing="0" cellpadding="0" style="margin:20px auto;">
+        <tr>
+          <td align="center" style="text-align:center; font-size:14px; color:#aaaaaa; padding:0px 0;">
+            <p style="margin:0; color:#aaaaaa; font-size:14px;">
+              2/552-560 Church Street, North Parramatta, NSW 2151
+            </p>
+            <p style="margin:1px 0 0; color:#aaaaaa; font-size:14px;">
+              © 2024 Factory Sound. All rights reserved.
+            </p>
+            <div class="social-icons" style="margin:5px 0 0;">
+              <a href="https://www.facebook.com/FactorySound/" target="_blank" rel="noopener">
+                <img src="https://img.icons8.com/ios-filled/24/22F08A/facebook.png" alt="Facebook">
+              </a>
+              <a href="https://www.instagram.com/factorysoundau/" target="_blank" rel="noopener">
+                <img src="https://img.icons8.com/ios-filled/24/22F08A/instagram-new.png" alt="Instagram">
+              </a>
+              <a href="https://www.linkedin.com/company/factorysound/?originalSubdomain=au" target="_blank" rel="noopener">
+                <img src="https://img.icons8.com/ios-filled/24/22F08A/linkedin.png" alt="LinkedIn">
+              </a>
+              <a href="https://www.youtube.com/user/FactorySound" target="_blank" rel="noopener">
+                <img src="https://img.icons8.com/ios-filled/24/22F08A/youtube-play.png" alt="YouTube">
+              </a>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
