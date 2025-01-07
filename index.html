@@ -34,18 +34,18 @@
       text-align: center;
     }
     h1 {
-      font-size: 24px; /* Reduced font size for better mobile fit */
+      font-size: 24px;
       margin: 20px 0;
     }
     p {
       font-size: 16px;
-      line-height: 1.6; /* Adjusted line height for readability */
-      margin: 15px 0;  /* Reduced vertical margins */
-      padding-left: 10px; /* Added horizontal padding for mobile */
+      line-height: 1.6;
+      margin: 15px 0;
+      padding-left: 10px; 
       padding-right: 10px;
     }
 
-    /* Header Links (Updated to ensure center alignment in all clients) */
+    /* Header Links */
     .header-links {
       text-align: center;
       width: 100%;
@@ -60,8 +60,8 @@
       margin: 5px;
       padding: 6px 10px;
       transition: color 0.3s ease, background-color 0.3s ease;
-      display: inline-block;     /* Ensures each link can be spaced and centered */
-      white-space: nowrap;       /* Prevent text from wrapping */
+      display: inline-block;
+      white-space: nowrap;
     }
     .header-links a:hover {
       color: #111111;
@@ -74,26 +74,26 @@
       background-color: #22F08A;
       color: #ffffff;
       font-weight: bold;
-      padding: 14px 20px; /* Adjust padding */
+      padding: 14px 20px;
       font-size: 16px;
       margin: 20px auto;
       text-align: center;
       text-transform: uppercase;
       text-decoration: none;
       transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-      width: fit-content; /* Adjust width to content */
-      max-width: 100%;    /* Ensure it doesn't overflow */
-      box-sizing: border-box; /* Include padding in width calculation */
+      width: fit-content; 
+      max-width: 100%;    
+      box-sizing: border-box; 
     }
     a.button:hover {
       background-color: #FF256F;
       color: #ffffff;
-      transform: scale(1.02); /* Reduced scale effect for mobile */
+      transform: scale(1.02);
     }
 
     /* Footer Links */
     .footer {
-      text-align: center; /* Center footer content on mobile */
+      text-align: center;
     }
     .footer a {
       color: #22F08A;
@@ -101,51 +101,51 @@
       text-decoration: none;
       transition: color 0.3s ease, background-color 0.3s ease;
       padding: 4px 6px;
-      display: inline-block; /* Ensure consistent padding */
-      margin: 0 5px; /* Add some horizontal spacing */
+      display: inline-block;
+      margin: 0 5px;
+    /* Footer links (text) still change color and background on hover */
+    }.footer a:hover {
+    color: #111111;
+    background-color: #22F08A;
     }
-    .footer a:hover {
-      color: #111111;
-      background-color: #22F08A;
-    }
+  
+        /* BUT for social icons, remove that background color */
+        .social-icons a:hover {
+            background-color: transparent !important; /* override the .footer rule */
+            color: #22F08A !important;               /* keep icon color consistent */
+        }
+        
+        /* Subtle hover scale on icons only */
+        .social-icons a:hover img {
+            transform: scale(1.05); /* or 1.1 if you want a bit more pop */
+            transition: transform 0.2s ease; 
+        }
+        
 
-    /* Social Icons */
-    .social-icons {
-      text-align: center; /* Center social icons */
-      margin-top: 10px;
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      margin-bottom: 25px;
     }
-    .social-icons img {
-      width: 24px;
-      margin: 0 3px; /* Increased margin for touch targets */
-      vertical-align: middle;
-      transition: transform 0.3s ease;
-    }
-    .social-icons a:hover img {
-      transform: scale(1.1); /* Reduced scale effect for mobile */
-    }
-
-    /* Hero Image */
     .hero img {
       display: block;
       width: 100%;
       max-width: 600px;
       height: auto;
-      aspect-ratio: 210 / 297;
       border-radius: 0;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
     }
 
     /* Divider */
     .divider {
       border: none;
       border-top: 1px solid #333333;
-      margin: 30px 0; /* Reduced margin */
+      margin: 30px 0;
     }
 
     /* Section Titles */
     .section-title {
-      font-size: 22px; /* Reduced font size */
+      font-size: 22px;
       font-weight: bold;
       text-transform: uppercase;
       color: #22F08A;
@@ -153,62 +153,32 @@
       border: 2px solid #333;
       padding: 10px;
       display: block;
-      width: 90%; /* Adjusted width */
-      margin: 30px auto 15px; /* Reduced margins */
-      box-sizing: border-box; /* Include padding in width */
+      width: 90%;
+      margin: 30px auto 15px;
+      box-sizing: border-box;
     }
     .sub-section-title {
-      font-size: 22px; /* Reduced font size */
+      font-size: 22px;
       font-weight: bold;
       text-transform: uppercase;
       color: #22F08A;
-      margin: 30px 0 24px; /* Reduced top margin */
+      margin: 30px 0 24px;
       text-align: center;
     }
 
     /* Highlight Section */
     .highlight-section {
       background-color: #222222;
-      padding: 25px; /* Reduced padding */
+      padding: 25px;
       text-align: center;
-      margin: 30px 10px; /* Adjusted margins */
+      margin: 30px 10px;
     }
     .highlight-section p {
-      margin: 10px 0; /* Reduced margins */
-      font-size: 14px; /* Slightly reduced font size */
+      margin: 10px 0;
+      font-size: 14px;
       text-transform: uppercase;
       font-weight: bold;
       color: #ffffff;
-    }
-
-    /* Optional (Products, etc.) */
-    .product-table {
-      width: 100%;
-      text-align: center;
-    }
-    .product-cell {
-      background-color: #1a1a1a;
-      padding: 20px;
-      margin: 10px 0;
-    }
-    .product-img-wrap {
-      background-color: #ffffff;
-      padding: 10px;
-      display: inline-block;
-      margin-bottom: 10px;
-      border: 1px solid #333;
-    }
-    .product-cell h3 {
-      margin: 10px 0;
-      color: #22F08A;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    .product-cell p {
-      font-size: 14px;
-      color: #cccccc;
-      margin-bottom: 15px;
-      line-height: 1.6;
     }
 
     /* CTA Container */
@@ -217,53 +187,44 @@
       margin-top: 20px;
     }
     .cta-container a.button {
-      padding: 16px 20px; /* Adjusted padding */
+      padding: 16px 20px;
       margin: 20px auto;
       width: auto;
       text-transform: uppercase;
     }
 
-    /* Neutrik Description */
-    .neutrik-description {
-      margin: 10px 10px 30px; /* Adjusted horizontal margins */
-      font-size: 14px; /* Slightly reduced font size */
-      line-height: 1.6; /* Adjusted line height */
-      color: #ffffff;
-      text-align: center;
-    }
-
     /* Media Query for Mobile Devices */
     @media (max-width: 600px) {
       .container {
-        padding: 15px; /* Reduced padding on small screens */
+        padding: 15px;
       }
       h1 {
         font-size: 20px;
       }
       p {
         font-size: 14px;
-        margin: 10px 0; /* Further reduced vertical margins */
+        margin: 10px 0;
       }
       .header-links {
         font-size: 14px;
       }
       .header-links a {
-        margin: 5px 0; /* Adjust margin for stacked links on narrow screens */
-        padding: 6px 5px; /* Reduce horizontal padding to fit */
+        margin: 5px 0;
+        padding: 6px 5px;
       }
       a.button {
-        font-size: 14px; /* Slightly smaller font on button */
-        padding: 12px 15px; /* Adjust button padding */
+        font-size: 14px;
+        padding: 12px 15px;
       }
       .section-title {
         font-size: 18px;
-        width: 95%; /* Take up more width on mobile */
+        width: 95%;
       }
       .sub-section-title {
         font-size: 18px;
       }
       .highlight-section {
-        padding: 20px; /* Further reduced padding on highlight section */
+        padding: 20px;
       }
       .highlight-section p {
         font-size: 12px;
@@ -273,7 +234,6 @@
 </head>
 <body style="margin:0; padding:0; background-color:#000000;">
 
-<!-- Preheader Text (Hidden in most clients) -->
 <div style="display:none; font-size:1px; color:#000000;">
   Factory Sound has landed in Sydney! Visit our new store for exclusive promotions, pro audio gear, and a chance to win a $1000 gift card.
 </div>
@@ -291,7 +251,7 @@
       <!-- Main Container -->
       <table width="600" border="0" cellspacing="0" cellpadding="0" class="container">
         <tr>
-          <td align="center" style="padding:20px 0;"> <!-- Reduced top/bottom padding on container cell -->
+          <td align="center" style="padding:20px 0;">
 
             <!-- Factory Sound Logo -->
             <div style="text-align:center; margin-bottom:10px;">
@@ -312,16 +272,18 @@
               <a href="https://factorysound.com/projects/" target="_blank" rel="noopener">Projects</a>
             </div>
 
-            <!-- Hero & Intro -->
-            <div class="hero" style="text-align:center; margin-bottom: 25px;"> <!-- Added margin -->
-              <img src="https://raw.githubusercontent.com/MumblesCode/Factory-Sound/main/COME%20IN%20STORE%2C%20GO%20IN%20THE%20DRAW%20(Flyer%20(A4))%20(1).gif"
-                   alt="Factory Sound Sydney Storefront"
-                   style="
-                     display:block;
-                     width:100%;
-                     max-width:600px;
-                     height:auto;
-                     border-radius:0;">
+            <!-- Hero & Intro (New GIF) -->
+            <div class="hero">
+              <img 
+                src="https://raw.githubusercontent.com/MumblesCode/Factory-Sound/main/COME%20IN%20STORE%2C%20GO%20IN%20THE%20DRAW%20(1080%20x%201350%20px).gif" 
+                alt="Factory Sound Sydney Storefront GIF"
+                style="
+                  display:block;
+                  width:100%;
+                  max-width:600px;
+                  height:auto;
+                  border-radius:0;
+                  margin:0 auto;">
             </div>
 
             <h1>Factory Sound Has Officially Landed!</h1>
