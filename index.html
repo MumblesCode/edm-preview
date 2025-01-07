@@ -22,7 +22,8 @@
       width: 100%;
       max-width: 600px;
       background-color: #111111;
-      margin: 20px auto;
+      margin-left: auto;
+      margin-right: auto;
       padding: 20px;
       color: #ffffff;
     }
@@ -33,66 +34,78 @@
       text-align: center;
     }
     h1 {
-      font-size: 28px;
+      font-size: 24px; /* Reduced font size for better mobile fit */
       margin: 20px 0;
     }
     p {
       font-size: 16px;
-      line-height: 1.8;
-      margin: 20px;
+      line-height: 1.6; /* Adjusted line height for readability */
+      margin: 15px 0; /* Reduced vertical margins */
+      padding-left: 10px; /* Added horizontal padding for mobile */
+      padding-right: 10px;
     }
 
     /* Header Links */
     .header-links {
       text-align: center;
-      width: 90%;
+      width: 100%; /* Full width on mobile */
       margin: 0 auto 10px;
-      font-size: 18px;
+      font-size: 16px; /* Slightly smaller font for mobile */
       text-transform: uppercase;
+      display: flex; /* Use flexbox for better mobile layout */
+      justify-content: center;
+      flex-wrap: nowrap; /* Prevent wrapping on mobile */
     }
     .header-links a {
       color: #ffffff;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 10px;
-      /* Add transitions to color & background */
+      margin: 5px; /* Reduced margin */
+      padding: 6px 10px; /* Adjust padding */
       transition: color 0.3s ease, background-color 0.3s ease;
-      padding: 6px 8px; /* Slight padding so hover bg is visible */
+      display: inline-block; /* Ensure consistent padding */
+      white-space: nowrap; /* Prevent text from wrapping */
     }
     .header-links a:hover {
-      color: #111111;            /* Switch text to dark on hover */
-      background-color: #22F08A; /* Bright green background on hover */
+      color: #111111;
+      background-color: #22F08A;
     }
 
     /* Buttons & CTA */
     a.button {
-      display: inline-block;
+      display: block; /* Full width button on mobile */
       background-color: #22F08A;
       color: #ffffff;
       font-weight: bold;
-      padding: 14px 28px;
+      padding: 14px 20px; /* Adjust padding */
       font-size: 16px;
       margin: 20px auto;
       text-align: center;
       text-transform: uppercase;
       text-decoration: none;
-      /* Smooth hover transition */
       transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+      width: fit-content; /* Adjust width to content */
+      max-width: 100%; /* Ensure it doesn't overflow */
+      box-sizing: border-box; /* Include padding in width calculation */
     }
     a.button:hover {
       background-color: #FF256F;
       color: #ffffff;
-      transform: scale(1.05); /* Slight enlarge on hover */
+      transform: scale(1.02); /* Reduced scale effect for mobile */
     }
 
     /* Footer Links */
+    .footer {
+      text-align: center; /* Center footer content on mobile */
+    }
     .footer a {
       color: #22F08A;
       font-weight: bold;
       text-decoration: none;
-      /* Smooth hover transition */
       transition: color 0.3s ease, background-color 0.3s ease;
-      padding: 6px 8px; /* So background highlight can show if added */
+      padding: 4px 6px;
+      display: inline-block; /* Ensure consistent padding */
+      margin: 0 5px; /* Add some horizontal spacing */
     }
     .footer a:hover {
       color: #111111;
@@ -100,15 +113,18 @@
     }
 
     /* Social Icons */
+    .social-icons {
+      text-align: center; /* Center social icons */
+      margin-top: 10px;
+    }
     .social-icons img {
       width: 24px;
-      margin: 0 3px;
+      margin: 0 3px; /* Increased margin for touch targets */
       vertical-align: middle;
-      /* Add a slight scale hover effect on the icon itself */
       transition: transform 0.3s ease;
     }
     .social-icons a:hover img {
-      transform: scale(1.2);
+      transform: scale(1.1); /* Reduced scale effect for mobile */
     }
 
     /* Hero Image */
@@ -117,21 +133,22 @@
       width: 100%;
       max-width: 600px;
       height: auto;
-      /* aspect-ratio not fully supported by all email clients */
       aspect-ratio: 210 / 297;
       border-radius: 0;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Divider */
     .divider {
       border: none;
       border-top: 1px solid #333333;
-      margin: 40px 0;
+      margin: 30px 0; /* Reduced margin */
     }
 
     /* Section Titles */
     .section-title {
-      font-size: 26px;
+      font-size: 22px; /* Reduced font size */
       font-weight: bold;
       text-transform: uppercase;
       color: #22F08A;
@@ -139,36 +156,35 @@
       border: 2px solid #333;
       padding: 10px;
       display: block;
-      width: 80%;
-      margin: 40px auto 20px;
+      width: 90%; /* Adjusted width */
+      margin: 30px auto 15px; /* Reduced margins */
+      box-sizing: border-box; /* Include padding in width */
     }
     .sub-section-title {
-      font-size: 26px;
+      font-size: 22px; /* Reduced font size */
       font-weight: bold;
       text-transform: uppercase;
       color: #22F08A;
-      margin: 40px 0 10px;
+      margin: 30px 0 24px; /* Reduced top margin */
       text-align: center;
     }
 
     /* Highlight Section */
     .highlight-section {
       background-color: #222222;
-      padding: 35px;
+      padding: 25px; /* Reduced padding */
       text-align: center;
-      margin: 40px 20px;
+      margin: 30px 10px; /* Adjusted margins */
     }
     .highlight-section p {
-      margin: 15px 20px;
-      font-size: 12px;
-
-
+      margin: 10px 0; /* Reduced margins */
+      font-size: 14px; /* Slightly reduced font size */
       text-transform: uppercase;
       font-weight: bold;
       color: #ffffff;
     }
 
-    /* Optional (Products, etc.) */
+    /* Optional (Products, etc.) - Keeping as is for now, can be further adjusted if needed */
     .product-table {
       width: 100%;
       text-align: center;
@@ -188,7 +204,7 @@
     .product-cell h3 {
       margin: 10px 0;
       color: #22F08A;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
     }
     .product-cell p {
@@ -204,7 +220,7 @@
       margin-top: 20px;
     }
     .cta-container a.button {
-      padding: 18px 36px;
+      padding: 16px 20px; /* Adjusted padding */
       margin: 20px auto;
       width: auto;
       text-transform: uppercase;
@@ -212,11 +228,50 @@
 
     /* Neutrik Description */
     .neutrik-description {
-      margin: 10px 20px 30px;
-      font-size: 16px;
-      line-height: 1.8;
+      margin: 10px 10px 30px; /* Adjusted horizontal margins */
+      font-size: 14px; /* Slightly reduced font size */
+      line-height: 1.6; /* Adjusted line height */
       color: #ffffff;
       text-align: center;
+    }
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px; /* Reduced padding on small screens */
+      }
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+        margin: 10px 0; /* Further reduced vertical margins */
+      }
+      .header-links {
+        font-size: 14px;
+        justify-content: space-around; /* Distribute links evenly */
+      }
+      .header-links a {
+        margin: 5px 0; /* Adjust margin for stacked links */
+        padding: 6px 5px; /* Reduce horizontal padding to fit */
+      }
+      a.button {
+        font-size: 14px; /* Slightly smaller font on button */
+        padding: 12px 15px; /* Adjust button padding */
+      }
+      .section-title {
+        font-size: 18px;
+        width: 95%; /* Take up more width on mobile */
+      }
+      .sub-section-title {
+        font-size: 18px;
+      }
+      .highlight-section {
+        padding: 20px; /* Further reduced padding on highlight section */
+      }
+      .highlight-section p {
+        font-size: 12px;
+      }
     }
   </style>
 </head>
@@ -226,29 +281,29 @@
 <div style="display:none; font-size:1px; color:#000000;">
   Factory Sound has landed in Sydney! Visit our new store for exclusive promotions, pro audio gear, and a chance to win a $1000 gift card.
 </div>
-	
+
 <!-- Main Wrapper Table -->
 <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="background-color:#000000; margin:0; padding:0;">
   <tr>
     <td align="center" valign="top" style="margin:0; padding:20px;">
-		
+
 			<!-- View in Browser -->
-                        <div style="font-size:10px; color:#aaaaaa; text-align:center; margin:0 0 -40px;">
-                            <a href="https://mumblescode.github.io/edm-preview" target="_blank" style="color:#aaaaaa; text-decoration:underline;">View this email in your browser</a>
-                        </div>
-		
+      <div style="font-size:10px; color:#aaaaaa; text-align:center; margin:0 0 10px;">
+          <a href="https://mumblescode.github.io/edm-preview" target="_blank" style="color:#aaaaaa; text-decoration:underline;">View this email in your browser</a>
+      </div>
+
       <!-- Main Container -->
       <table width="600" border="0" cellspacing="0" cellpadding="0" class="container">
         <tr>
-          <td align="center" style="padding:20px;">
-				
+          <td align="center" style="padding:20px 0;"> <!-- Reduced top/bottom padding on container cell -->
+
             <!-- Factory Sound Logo -->
             <div style="text-align:center; margin-bottom:10px;">
               <img src="https://raw.githubusercontent.com/MumblesCode/Factory-Sound/main/FS%20Logo_RGB_White_HZ.PNG"
                    alt="Factory Sound Logo"
                    style="
-                     width:auto; 
-                     max-width:480px; 
+                     width:auto;
+                     max-width:460px;
                      height:auto;
                      display:block;
                      margin:0 auto;">
@@ -256,19 +311,19 @@
 
             <!-- Header Links -->
             <div class="header-links">
-              <a href="https://factorysound.com/shop-page/" target="_blank" rel="noopener">Shop Now</a> |
-              <a href="https://factorysound.com/our-brands/" target="_blank" rel="noopener">Brands</a> |
+              <a href="https://factorysound.com/shop-page/" target="_blank" rel="noopener">Shop Now</a>
+              <a href="https://factorysound.com/our-brands/" target="_blank" rel="noopener">Brands</a>
               <a href="https://factorysound.com/projects/" target="_blank" rel="noopener">Projects</a>
             </div>
 
             <!-- Hero & Intro -->
-            <div class="hero" style="text-align:center;">
+            <div class="hero" style="text-align:center; margin-bottom: 25px;"> <!-- Added margin -->
               <img src="https://raw.githubusercontent.com/MumblesCode/Factory-Sound/main/COME%20IN%20STORE%2C%20GO%20IN%20THE%20DRAW%20(Flyer%20(A4))%20(1).gif"
                    alt="Factory Sound Sydney Storefront"
                    style="
-                     display:block; 
-                     width:100%; 
-                     max-width:600px; 
+                     display:block;
+                     width:100%;
+                     max-width:600px;
                      height:auto;
                      border-radius:0;">
             </div>
@@ -293,13 +348,15 @@
                 <span style="font-size:20px;">factory sound $1000 Gift Card!</span>
               </p>
               <!-- CTA Button -->
-              <a href="https://www.google.com/maps/dir/?api=1&destination=Factory+Sound+Parramatta"
-                 target="_blank"
-                 rel="noopener"
-                 class="button">
-                <span style="font-size:14px; display:inline-block; color:#ffffff;">Get Directions to</span><br>
-                Visit Our Sydney Store
-              </a>
+              <div class="cta-container">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Factory+Sound+Parramatta"
+                   target="_blank"
+                   rel="noopener"
+                   class="button">
+                  <span style="font-size:14px; display:inline-block; color:#ffffff;">Get Directions to</span><br>
+                  Visit Our Sydney Store
+                </a>
+              </div>
             </div>
 
             <p>
@@ -314,16 +371,16 @@
       </table>
 
       <!-- Footer -->
-      <table width="600" border="0" cellspacing="0" cellpadding="0" style="margin:20px auto;">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top:20px;">
         <tr>
-          <td align="center" style="text-align:center; font-size:14px; color:#aaaaaa; padding:0px 0;">
+          <td align="center" class="footer" style="font-size:14px; color:#aaaaaa; padding:0px;">
             <p style="margin:0; color:#aaaaaa; font-size:14px;">
               2/552-560 Church Street, North Parramatta, NSW 2151
             </p>
-            <p style="margin:1px 0 0; color:#aaaaaa; font-size:14px;">
+            <p style="margin:5px 0 0; color:#aaaaaa; font-size:14px;">
               © 2024 Factory Sound. All rights reserved.
             </p>
-            <div class="social-icons" style="margin:5px 0 0;">
+            <div class="social-icons">
               <a href="https://www.facebook.com/FactorySound/" target="_blank" rel="noopener">
                 <img src="https://img.icons8.com/ios-filled/24/22F08A/facebook.png" alt="Facebook">
               </a>
@@ -346,4 +403,3 @@
 </table>
 </body>
 </html>
-
