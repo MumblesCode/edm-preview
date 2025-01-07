@@ -40,31 +40,28 @@
     p {
       font-size: 16px;
       line-height: 1.6; /* Adjusted line height for readability */
-      margin: 15px 0; /* Reduced vertical margins */
+      margin: 15px 0;  /* Reduced vertical margins */
       padding-left: 10px; /* Added horizontal padding for mobile */
       padding-right: 10px;
     }
 
-    /* Header Links */
+    /* Header Links (Updated to ensure center alignment in all clients) */
     .header-links {
       text-align: center;
-      width: 100%; /* Full width on mobile */
+      width: 100%;
       margin: 0 auto 10px;
-      font-size: 16px; /* Slightly smaller font for mobile */
+      font-size: 16px;
       text-transform: uppercase;
-      display: flex; /* Use flexbox for better mobile layout */
-      justify-content: center;
-      flex-wrap: nowrap; /* Prevent wrapping on mobile */
     }
     .header-links a {
       color: #ffffff;
       text-decoration: none;
       font-weight: bold;
-      margin: 5px; /* Reduced margin */
-      padding: 6px 10px; /* Adjust padding */
+      margin: 5px;
+      padding: 6px 10px;
       transition: color 0.3s ease, background-color 0.3s ease;
-      display: inline-block; /* Ensure consistent padding */
-      white-space: nowrap; /* Prevent text from wrapping */
+      display: inline-block;     /* Ensures each link can be spaced and centered */
+      white-space: nowrap;       /* Prevent text from wrapping */
     }
     .header-links a:hover {
       color: #111111;
@@ -85,7 +82,7 @@
       text-decoration: none;
       transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
       width: fit-content; /* Adjust width to content */
-      max-width: 100%; /* Ensure it doesn't overflow */
+      max-width: 100%;    /* Ensure it doesn't overflow */
       box-sizing: border-box; /* Include padding in width calculation */
     }
     a.button:hover {
@@ -184,7 +181,7 @@
       color: #ffffff;
     }
 
-    /* Optional (Products, etc.) - Keeping as is for now, can be further adjusted if needed */
+    /* Optional (Products, etc.) */
     .product-table {
       width: 100%;
       text-align: center;
@@ -249,10 +246,9 @@
       }
       .header-links {
         font-size: 14px;
-        justify-content: space-around; /* Distribute links evenly */
       }
       .header-links a {
-        margin: 5px 0; /* Adjust margin for stacked links */
+        margin: 5px 0; /* Adjust margin for stacked links on narrow screens */
         padding: 6px 5px; /* Reduce horizontal padding to fit */
       }
       a.button {
@@ -287,9 +283,9 @@
   <tr>
     <td align="center" valign="top" style="margin:0; padding:20px;">
 
-			<!-- View in Browser -->
+      <!-- View in Browser -->
       <div style="font-size:10px; color:#aaaaaa; text-align:center; margin:0 0 10px;">
-          <a href="https://mumblescode.github.io/edm-preview" target="_blank" style="color:#aaaaaa; text-decoration:underline;">View this email in your browser</a>
+        <a href="https://mumblescode.github.io/edm-preview" target="_blank" style="color:#aaaaaa; text-decoration:underline;">View this email in your browser</a>
       </div>
 
       <!-- Main Container -->
